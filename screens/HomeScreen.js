@@ -1,10 +1,16 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Button, Alert } from 'react-native';
 
 export default function HomeScreen() {
+    const handleButtonPress = () => {
+        Alert.alert("Hello!", "You pressed the button.");
+    };
+
     return (
         <View style={styles.container}>
-            <Text style={styles.text}>Das ist der Startbildschirm!</Text>
+            <Text style={styles.title}>Willkommen bei SpinAdventure!</Text>
+            <Text style={styles.subtitle}>Hier startet das nächste Abenteuer</Text>
+            <Button title="Press Me" onPress={handleButtonPress} />
         </View>
     );
 }
@@ -14,11 +20,17 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#f5f5f5',
+        backgroundColor: '#f0f8ff',
     },
-    text: {
-        fontSize: 18,
+    title: {
+        fontSize: 24,
         fontWeight: 'bold',
-        color: '#555',
+        color: '#333',
+        marginBottom: 10,
+    },
+    subtitle: {
+        fontSize: 16,
+        color: '#666',
+        marginBottom: 20,
     },
 });
