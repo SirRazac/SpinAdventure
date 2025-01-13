@@ -10,7 +10,7 @@ export default function HomeScreen() {
         <View style={styles.container}>
             <Text style={styles.title}>Willkommen bei SpinAdventure!</Text>
             <Text style={styles.subtitle}>Hier startet das nächste Abenteuer</Text>
-            <Button title="Press Me" onPress={handleButtonPress} />
+            <Button title="Button" onPress={handleButtonPress} />
         </View>
     );
 }
