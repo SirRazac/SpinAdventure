@@ -17,7 +17,7 @@ const HomeScreen = () => {
       <View style={styles.container}>
         <Text style={styles.greeting}>Willkommen bei SpinAdventure!</Text>
         <Image 
-          source={{ uri: 'https://via.placeholder.com/150' }}
+          source={{ uri: 'https://picsum.photos/200' }}
           style={styles.logo} 
         />
         <View style={styles.buttonContainer}>
