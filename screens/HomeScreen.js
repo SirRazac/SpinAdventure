@@ -18,7 +18,7 @@ const HomeScreen = () => {
         <Text style={styles.title}>Willkommen bei SpinAdventure!</Text>
         <Button
           title="Klicke mich!"
-          color="#841584" // Lila Buttonfarbe
+          color="#4caf50"
           onPress={showAlert}
         />
       </View>
@@ -30,7 +30,7 @@ const HomeScreen = () => {
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: '#f0f8ff',
+      backgroundColor: '#d9fdd3',
     },
     title: {
       fontSize: 24,
